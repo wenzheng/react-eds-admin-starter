@@ -1,13 +1,11 @@
 {
-  "name": "material-dashboard-react",
+  "name": "react-eds-admin-starter",
   "version": "1.4.1",
-  "description": "Material Dashboard React. Coded by Creative Tim",
+  "description": "EDS adimn dashboard template, created by Wenzheng Zhu",
   "private": false,
   "main": "dist/index.js",
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.55",
-    "@material-ui/core": "1.4.3",
-    "@material-ui/icons": "2.0.1",
     "@types/googlemaps": "3.30.11",
     "@types/markerclustererplus": "2.1.33",
     "ajv": "6.5.2",
@@ -35,15 +33,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-dashboard-react.git"
+    "url": "git+https://github.com/wenzheng/react-eds-admin-starter.git"
   },
   "keywords": [],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "author": "Wenzheng Zhu <wenzheng.zhu@ericsson.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
+    "url": "https://github.com/wenzheng/react-eds-admin-starter/issues"
   },
-  "homepage": "https://creativetimofficial.github.io/material-dashboard-react/#/dashboard",
   "optionalDependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^4.19.1",
