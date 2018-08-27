@@ -1,0 +1,36 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "EDS: VanillaJS Demo",
+  "main": "webpack.config.js",
+  "url": "http://eds.rxn.us",
+  "bugs": "https://git.mt.rxn.us/groups/ericsson-design-system/vanilla-components/-/issues",
+  "repository": {
+    "type" : "git",
+    "url": "https://git.mt.rxn.us/groups/ericsson-design-system/vanilla-components/bundle.git"
+  },
+  "scripts": {
+    "preinstall": "npm run common-dependency && npm run tree-dependency",
+    "common-dependency": "git clone git@git.mt.rxn.us:ericsson-design-system/vanilla-components/common.git --recurse-submodules src/common",
+    "tree-dependency": "git clone git@git.mt.rxn.us:ericsson-design-system/vanilla-components/trees.git src/trees",
+    "start": "node_modules/.bin/webpack-dev-server --open",
+    "postinstall": "npm run build",
+    "build": "node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "Juan Greco",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "~7.1.4",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

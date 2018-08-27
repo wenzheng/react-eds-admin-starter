@@ -1,0 +1,182 @@
+/////////////////////////////////////
+// Font - Typography
+/////////////////////////////////////
+
+@import (reference) "./icon-names";
+@import (reference) "../global";
+@import "./icons";
+
+& {
+  font-size: 14px;
+  color: @text;
+  font-family: "Ericsson Hilda", Helvetica, Arial, sans-serif;
+
+  /* Better Font Rendering =========== */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.5em;
+  color: @paragraph;
+
+  &.subtle {
+    opacity: .5;
+  }
+}
+
+.section {
+  opacity: .7;
+  padding: @space-base 0;
+
+  &.no-padding-top {
+    padding-top: 0;
+  }
+
+  &.full-opacity {
+    opacity: 1;
+  }
+
+  &.purple {
+    color: @purple;
+  }
+}
+
+// Links
+a {
+  color: @link-blue;
+  cursor: pointer;
+  text-decoration: none;
+
+  &.not-link {
+    color: inherit;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &.subtle-link {
+    color: @text;
+    text-decoration: underline dashed;
+
+    &:hover {
+      text-decoration-color: @blue;
+      text-decoration-style: solid;
+    }
+  }
+}
+
+// lists
+ol, ul {
+  margin-top: 0;
+  color: @paragraph;
+
+  li {
+    padding: 0 0 @space-base;
+  }
+}
+
+// Hilda Font
+@font-face {
+  font-family: "Ericsson Hilda";
+  src: url("@{hilda-font-path}/EricssonHilda-Light.eot");
+  src: local("Ericsson Hilda Light"), local("EricssonHilda-Light"),
+    url("@{hilda-font-path}/EricssonHilda-Light.eot?#iefix") format("embedded-opentype"),
+    url("@{hilda-font-path}/EricssonHilda-Light.woff2") format("woff2"),
+    url("@{hilda-font-path}/EricssonHilda-Light.woff") format("woff"),
+    url("@{hilda-font-path}/EricssonHilda-Light.ttf") format("truetype"),
+    url("@{hilda-font-path}/EricssonHilda-Light.svg#EricssonHilda-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ericsson Hilda";
+  src: url("@{hilda-font-path}/EricssonHilda-Regular.eot");
+  src: local("Ericsson Hilda Regular"), local("EricssonHilda-Regular"),
+    url("@{hilda-font-path}/EricssonHilda-Regular.eot?#iefix") format("embedded-opentype"),
+    url("@{hilda-font-path}/EricssonHilda-Regular.woff2") format("woff2"),
+    url("@{hilda-font-path}/EricssonHilda-Regular.woff") format("woff"),
+    url("@{hilda-font-path}/EricssonHilda-Regular.ttf") format("truetype"),
+    url("@{hilda-font-path}/EricssonHilda-Regular.svg#EricssonHilda-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ericsson Hilda";
+  src: url("@{hilda-font-path}/EricssonHilda-Medium.eot");
+  src: local("Ericsson Hilda Medium"), local("EricssonHilda-Medium"),
+    url("@{hilda-font-path}/EricssonHilda-Medium.eot?#iefix") format("embedded-opentype"),
+    url("@{hilda-font-path}/EricssonHilda-Medium.woff2") format("woff2"),
+    url("@{hilda-font-path}/EricssonHilda-Medium.woff") format("woff"),
+    url("@{hilda-font-path}/EricssonHilda-Medium.ttf") format("truetype"),
+    url("@{hilda-font-path}/EricssonHilda-Medium.svg#EricssonHilda-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ericsson Hilda";
+  src: url("@{hilda-font-path}/EricssonHilda-Bold.eot");
+  src: local("Ericsson Hilda Bold"), local("EricssonHilda-Bold"),
+    url("@{hilda-font-path}/EricssonHilda-Bold.eot?#iefix") format("embedded-opentype"),
+    url("@{hilda-font-path}/EricssonHilda-Bold.woff2") format("woff2"),
+    url("@{hilda-font-path}/EricssonHilda-Bold.woff") format("woff"),
+    url("@{hilda-font-path}/EricssonHilda-Bold.ttf") format("truetype"),
+    url("@{hilda-font-path}/EricssonHilda-Bold.svg#EricssonHilda-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Ericsson Hilda Mono Font
+@font-face {
+  font-family: "Ericsson Hilda Mono";
+  src: url("@{hilda-font-path}/EricssonHildaMono-Light.eot");
+  src: local("Ericsson Hilda Mono Light"), local("EricssonHildaMono-Light"),
+    url("@{hilda-font-path}/EricssonHildaMono-Light.eot?#iefix") format("embedded-opentype"),
+    url("@{hilda-font-path}/EricssonHildaMono-Light.woff2") format("woff2"),
+    url("@{hilda-font-path}/EricssonHildaMono-Light.woff") format("woff"),
+    url("@{hilda-font-path}/EricssonHildaMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ericsson Hilda Mono";
+  src: url("@{hilda-font-path}/EricssonHildaMono-Regular.eot");
+  src: local("Ericsson Hilda Mono Regular"), local("EricssonHildaMono-Regular"),
+    url("@{hilda-font-path}/EricssonHildaMono-Regular.eot?#iefix") format("embedded-opentype"),
+    url("@{hilda-font-path}/EricssonHildaMono-Regular.woff2") format("woff2"),
+    url("@{hilda-font-path}/EricssonHildaMono-Regular.woff") format("woff"),
+    url("@{hilda-font-path}/EricssonHildaMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ericsson Hilda Mono";
+  src: url("@{hilda-font-path}/EricssonHildaMono-Light.eot");
+  src: local("Ericsson Hilda Mono Medium"), local("EricssonHildaMono-Medium"),
+    url("@{hilda-font-path}/EricssonHildaMono-Medium.eot?#iefix") format("embedded-opentype"),
+    url("@{hilda-font-path}/EricssonHildaMono-Medium.woff2") format("woff2"),
+    url("@{hilda-font-path}/EricssonHildaMono-Medium.woff") format("woff"),
+    url("@{hilda-font-path}/EricssonHildaMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ericsson Hilda Mono";
+  src: url("@{hilda-font-path}/EricssonHildaMono-Bold.eot");
+  src: local("Ericsson Hilda Mono Bold"), local("EricssonHildaMono-Bold"),
+    url("@{hilda-font-path}/EricssonHildaMono-Bold.eot?#iefix") format("embedded-opentype"),
+    url("@{hilda-font-path}/EricssonHildaMono-Bold.woff2") format("woff2"),
+    url("@{hilda-font-path}/EricssonHildaMono-Bold.woff") format("woff"),
+    url("@{hilda-font-path}/EricssonHildaMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

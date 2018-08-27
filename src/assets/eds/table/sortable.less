@@ -1,0 +1,47 @@
+/////////////////////////////////////
+// Table - Sortable
+/////////////////////////////////////
+@import (reference) "../common/fonts/icon-names";
+@import (reference) "../common/global";
+
+.table {
+  &.sortable {
+    th {
+      font-weight: @weight-bold;
+
+      &::after {
+        font-family: edsfont;
+        margin-left: @space-base;
+        // vertical-align: middle;
+        // float: right;
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+
+        &::after {
+          color: @blue;
+        }
+      }
+
+      &.is-sortable {
+        &::after {
+          content: @icon-sorting;
+        }
+      }
+
+      &.asc {
+        &::after {
+          content: @icon-sort-up;
+        }
+      }
+
+      &.desc {
+        &::after {
+          content: @icon-sort-down;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+[submodule "vanilla-components/fonts"]
+	path = fonts
+	url = ../fonts.git
+	branch = master

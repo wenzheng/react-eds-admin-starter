@@ -1,0 +1,88 @@
+/////////////////////////////////////
+// Progress-bar
+/////////////////////////////////////
+@import (reference) "../common/global";
+
+@progressbar-height: 8px;
+@progressbar-height-thin: 4px;
+
+.progressbar {
+  label {
+    line-height: 0;
+    display: block;
+    padding-bottom: @space-base;
+
+    .icon {
+      margin-right: @space-small;
+    }
+  }
+
+  progress, meter {
+    // Remove the default style
+    appearance: none;
+    width: ~"calc(100% - 44px)";
+    height: @progressbar-height;
+    border: none;
+    vertical-align: middle;
+    background-color: @progressbar-background;
+    transition: all .2s ease-in-out;
+
+    &::-webkit-progress-value {
+      background-color: @progressbar-value;
+      transition: all .2s ease-in-out;
+      height: @progressbar-height;
+      width: 100%;
+    }
+
+    &::-webkit-progress-bar {
+      background-color: @progressbar-background;
+    }
+
+    &::-moz-progress-bar {
+      background-color: @progressbar-value;
+      transition: all .2s ease-in-out;
+    }
+
+    &:not([value]) {
+      width: 100%;
+      // indeterminate
+      &::-webkit-progress-bar {
+        transition: all .2s ease-in-out;
+        overflow: hidden;
+        opacity: .5;
+        background: url(./loading.gif) repeat-x;
+        background-size: 150px;
+      }
+    }
+
+    &.buffer {
+      margin-bottom: -34px;
+      opacity: .3;
+    }
+  }
+
+  progress + span {
+    margin-left: @space-small;
+  }
+
+  // Colors
+  &.blue {
+    progress::-webkit-progress-value { background-color: @blue; }
+    progress::-moz-progress-bar { background-color: @blue; }
+  }
+
+  &.red {
+    progress::-webkit-progress-value { background-color: @red; }
+    progress::-moz-progress-bar { background-color: @red; }
+  }
+
+  &.thin {
+    progress {
+      height: @progressbar-height-thin;
+
+      &::-webkit-progress-value {
+        height: @progressbar-height-thin;
+      }
+    }
+  }
+}

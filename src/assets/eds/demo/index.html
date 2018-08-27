@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ericsson Product Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="src/common/favicon.ico">
+    <link rel="stylesheet" href="lib/eds-bundle.css">
+  </head>
+
+  <!-- Choose default theme: light or dark -->
+  <body class="light">
+
+    <!-- System bar -->
+    <header class="sysbar">
+      <div class="items-container">
+        <div class="item">
+          <i class="icon icon-econ"></i>
+          <span class="product">Ericsson Product Name</span>
+          <span class="acronym">EPN</span>
+        </div>
+      </div>
+      <div class="items-container">
+        <div class="item hover">
+          <i class="icon icon-profile"></i>
+          <span class="username">Username</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <aside class="settings hidden">
+        <!-- Settings hidden by default -->
+        <p>Settings</p>
+      </aside>
+
+      <div class="app slide-right">
+
+        <!-- Application bar -->
+        <nav class="appbar">
+          <div class="actions-left">
+            <div class="item">
+              <i class="navigation-toggle closed"></i>
+            </div>
+            <div class="menu-anchor open-menu">Menu</div>
+            <div class="title open-menu">
+              Example page<span class="subtitle">Page subtitle</span>
+            </div>
+          </div>
+          <div class="actions-right"></div>
+        </nav>
+
+        <!-- Application body -->
+        <div class="appbody">
+
+          <!-- Navigation menu -->
+          <div class="appnav">
+            <div class="tree navigation">
+              <ul>
+                <li><a class="item active">Example page</a></li>
+                <li><a class="item">Standalone example page</a></li>
+
+                <li>
+                  <span class="title closed">Group of pages</span>
+                  <ul>
+                    <li><a class="item">Example 1</a></li>
+                    <li><a class="item">Example 2</a></li>
+                    <li><a class="item">Example 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="appcontent">
+
+            <!-- Row 1 -->
+            <div class="row">
+              <div class="tile sm-12" id="t-basic">
+
+                <div class="header">
+                  <div class="left">
+                    <div class="title">Top tile</div>
+                    <div class="subtitle">Subtitle example</div>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <div class="box"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row">
+              <div class="tile sm-12 xl-6" id="t-basic">
+                <div class="header">
+                  <div class="left">
+                    <div class="title">Left tile</div>
+                    <div class="subtitle">Subtitle example</div>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="box"></div>
+                </div>
+              </div>
+
+              <div class="tile sm-12 xl-6" id="t-basic">
+                <div class="header">
+                  <div class="left">
+                    <div class="title">Right tile</div>
+                    <div class="subtitle">Subtitle example</div>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="box"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="lib/eds-bundle.js" charset="utf-8"></script>
+  </body>
+</html>

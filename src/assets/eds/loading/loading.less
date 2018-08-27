@@ -1,0 +1,35 @@
+/////////////////////////////////////
+// Loading (Dial)
+/////////////////////////////////////
+
+.loading {
+  background: url(@dial-gif);
+  background-size: 32px;
+  height: 32px;
+  width: 32px;
+
+  &.large {
+    background-size: 64px 64px;
+    height: 64px;
+    width: 64px;
+  }
+
+  &.small {
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+  }
+
+  &.btn {
+    background: url(@dial-gif) no-repeat center;
+    background-size: 16px;
+  }
+
+  &:hover {
+    &.btn {
+      background: url(@dial-gif-invert) no-repeat center;
+      background-color: @btn-default;
+      background-size: 16px;
+    }
+  }
+}

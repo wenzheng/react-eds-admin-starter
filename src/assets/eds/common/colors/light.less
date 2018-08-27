@@ -1,0 +1,209 @@
+/////////////////////////////////////
+// Light theme
+/////////////////////////////////////
+
+// Layer colors
+@layer0: rgb(12, 12, 12);
+@layer1: rgb(224, 224, 224);
+@layer2: rgb(242, 242, 242);
+
+// TODO: this variable is only used in showcase-icons, should it be renamed or removed?
+@hover-text: rgb(78, 78, 78);
+// Text
+@text: rgb(36, 36, 36);
+@paragraph: rgb(36, 36, 36);
+@link-blue: rgb(0, 130, 240);
+
+// Status
+@green: rgb(52, 176, 127);
+@yellow: rgb(242, 198, 24);
+@orange: rgb(247, 133, 33);
+@red: rgb(245, 35, 35);
+
+// Brand
+@blue: rgb(0, 130, 240);
+@purple: rgb(165, 110, 190);
+
+// OTHER
+@white: rgb(250, 250, 250);
+@gray: rgb(118, 118, 118);
+@light-gray: rgb(200, 200, 200);
+@dark-gray: rgb(78, 78, 78);
+
+@weight-regular: 400;
+@weight-medium: 500;
+@weight-bold: 700;
+
+// Forms
+@focus-outline-color: fadeout(@blue, 50%);
+
+// Tables
+@table-outer-gray: rgb(176, 176, 176);
+@table-inner-gray: rgb(200, 200, 200);
+@table-striped-gray: rgb(235, 235, 235);
+@table-hover: rgb(220, 220, 220);
+@table-selected: rgba(0, 130, 240, .4);
+
+@pagination-text: @text;
+
+// Navigation tree
+@tree-hover: rgb(205, 205, 205);
+
+// Inputs
+@input-background: @white;
+@input-border: rgb(200, 200, 200);
+@input-border-hover: rgb(176, 176, 176);
+@input-border-blue: @blue;
+@input-border-red: @red;
+@input-revision-background: rgb(231, 244, 255);
+@input-placeholder: rgba(36, 36, 36, .6);
+@input-text-disabled: rgba(36, 36, 36, .6);
+@input-background-disabled: rgb(235, 235, 235);
+
+// search field
+@search-field-background: @white;
+@search-field-color: @text;
+@search-field-placeholder: @gray;
+
+// buttons
+@btn-default: @dark-gray;
+@btn-default-text: rgb(224, 224, 224);
+@btn-default-active: darken(@btn-default, 8%);
+@btn-primary-text: rgb(255, 255, 255);
+
+// menu
+@menu-background: @white;
+@menu-hr: lighten(@input-border, 7%);
+
+// tooltips
+@tooltip-background-invert: rgb(204, 204, 204);
+@tooltip-background: rgb(51, 51, 51); //rgb(250, 250, 250);
+@tooltip-text: rgb(242, 242, 242);
+@tooltip-shadow: rgb(221, 221, 221);
+
+// Notifications
+@notification-background: @white;
+@notification-border: rgb(197, 197, 197);
+@notification-border-error: rgb(194, 82, 88);
+@notification-border-success: @blue;
+@notification-description: rgba(36, 36, 36, .8);
+@notification-shadow-color: rgba(0, 0, 0, .1);
+@notification-hover: @layer0;
+@notification-hover-extra: @white;
+
+// scrollbars
+@scrollbar-thumb: rgb(177, 177, 177);
+
+// progress bars
+@progressbar-background: rgb(206, 206, 206);
+@progressbar-value: @text;
+
+// slider
+@slider-track: rgb(212, 212, 212);
+@slider-thumb: @text;
+
+// tile box
+@tile-box: @layer1;
+@tile-divider: rgb(176, 176, 176);
+
+// dialogs
+@dialog-overlay: rgba(0, 0, 0, .3);
+@dialog-background: rgb(250, 250, 250);
+
+// pills
+@pills-background: rgb(200, 200, 200);
+
+// calendar
+@calendar-background: @white;
+
+// dial
+@dial-gif: "../loading/dial-light.gif";
+@dial-gif-invert: "../loading/dial-dark.gif";
+@dial-btn-color: rgb(36, 36, 36);
+@dial-btn-color-invert: rgb(250, 250, 250);
+
+// wizard
+@wizard-line-completed: @text;
+@wizard-line-not-completed: @light-gray;
+@wizard-header-line: @light-gray;
+@wizard-footer-line: @light-gray;
+
+// switch
+@switch-border: rgb(200, 200, 200);
+@switch-background: @white;
+@switch-ball: rgb(36, 36, 36);
+// - hover
+@switch-border-hover: rgb(176, 176, 176);
+// - selected
+@switch-border-selected: @blue;
+@switch-background-selected: @blue;
+@switch-ball-selected: @white;
+// - hover selected
+@switch-border-hover-selected: rgb(38, 150, 242);
+@switch-background-hover-selected: rgb(38, 150, 242);
+// - disabled
+@switch-border-disabled: rgb(200, 200, 200);
+@switch-background-disabled: rgb(235, 235, 235);
+@switch-ball-disabled: @gray;
+
+// Prism colors
+@prism-text: @text;
+@prism-box-border: rgb(218, 218, 218);
+@prism-select: rgb(179, 212, 252);
+@prism-background: rgb(250, 250, 250);
+@prism-border: @layer2;
+@prism-text-token: rgb(94, 100, 101);
+@prism-text-punctuation: rgba(118, 118, 118, .43);
+@prism-text-tag: rgb(119, 119, 119);
+@prism-text-attr: rgb(84, 123, 156);
+// @prism_text_insert: rgb(7, 134, 240);
+@prism-text-insert: rgb(48, 127, 192);
+@prism-text-keyword: rgb(41, 108, 163);
+@prism-text-string: @gray; // operator
+@prism-text-function: @purple;//rgb(221, 74, 104);
+@prism-text-comment: rgb(207, 207, 207);
+@prism-line-number: rgb(0, 0, 0);
+
+// Code colors
+@code-gradient: linear-gradient(to bottom, rgba(250, 250, 250, .5) 0%, rgb(250, 250, 250) 100%);
+@kbd-background: rgb(218, 218, 218);
+
+// Checkboxes
+@checkbox-default: url(../../checkboxes/svgs/light/cb-default.svg);
+@checkbox-default-disabled: url(../../checkboxes/svgs/light/cb-default-disabled.svg);
+@checkbox-default-hover: url(../../checkboxes/svgs/light/cb-default-hover.svg);
+
+@checkbox-selected: url(../../checkboxes/svgs/light/cb-selected-default.svg);
+@checkbox-selected-disabled: url(../../checkboxes/svgs/light/cb-selected-disabled.svg);
+@checkbox-selected-hover: url(../../checkboxes/svgs/light/cb-selected-hover.svg);
+
+@checkbox-indeterminate: url(../../checkboxes/svgs/light/cb-indeterminate-default.svg);
+@checkbox-indeterminate-disabled: url(../../checkboxes/svgs/light/cb-indeterminate-disabled.svg);
+@checkbox-indeterminate-hover: url(../../checkboxes/svgs/light/cb-indeterminate-hover.svg);
+
+// Radio buttons
+@radio-button-default: url(../../radiobuttons/svgs/light/rb-default.svg);
+@radio-button-default-disabled: url(../../radiobuttons/svgs/light/rb-default-disabled.svg);
+@radio-button-default-hover: url(../../radiobuttons/svgs/light/rb-default-hover.svg);
+
+@radio-button-selected: url(../../radiobuttons/svgs/light/rb-selected-default.svg);
+@radio-button-selected-disabled: url(../../radiobuttons/svgs/light/rb-selected-disabled.svg);
+@radio-button-selected-hover: url(../../radiobuttons/svgs/light/rb-selected-hover.svg);
+
+// Wizard
+@wizard-step-current: url(../../wizard/svgs/light-current.svg);
+@wizard-step-next: url(../../wizard/svgs/light-next.svg);
+@wizard-step-completed: url(../../wizard/svgs/light-completed.svg);
+@wizard-step-completedHover: url(../../wizard/svgs/light-completedHover.svg);
+
+// Data Visualization
+// Gauge
+@gauge-foreground: @light-gray;
+@gauge-background: @layer2;
+@gauge-value: @text;
+
+
+// TABS
+@tabs-text: @gray;
+
+// TODO: continue from PROGRESSBAR -> https://ericsson.sharepoint.com/:w:/r/sites/BDGSCentralUXTeam/_layouts/15/WopiFrame.aspx?sourcedoc=%7B0999AD1D-AE2F-4975-BCDA-C62A1226A4A6%7D&file=Changes%20Summary.rtf&action=default&IsList=1&ListId=%7BE9109049-0363-482B-B0C9-9F1BFC19C944%7D&ListItemId=4551

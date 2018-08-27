@@ -1,0 +1,95 @@
+/////////////////////////////////////////////////////////////////////////////
+// Ericsson Design System Stylesheet
+/////////////////////////////////////////////////////////////////////////////
+@import "./normalize";
+
+.dark {
+  @import (reference) "./colors/dark";
+  .all_components_mixin();
+}
+
+.light {
+  @import (reference)"./colors/light";
+  .all_components_mixin();
+}
+
+.all_components_mixin() {
+  // Common
+  @import "./animations/transitions";
+  @import "./fonts/icon-font";
+  @import "./fonts/typography";
+  @import "./grid/flexgrid";
+  @import "./grid/media-queries";
+  @import "./layout/sysbar";
+  @import "./layout/settings";
+  @import "./layout/appbar";
+  @import "./layout/navigation";
+  @import "./layout/main";
+  @import "./layout/tile";
+  @import "./layout/footer";
+  @import "./layout/scrollbar";
+
+  // Submodules
+  @import (optional) "../table/simple";
+  @import (optional) "../table/sortable";
+  @import (optional) "../table/selectable";
+  @import (optional) "../table/dashed";
+  @import (optional) "../table/striped";
+  @import (optional) "../table/pagination";
+  @import (optional) "../table/compact";
+  @import (optional) "../table/tiny";
+  @import (optional) "../table/pills";
+
+  @import (optional) "../accordion/accordion";
+
+  @import (optional) "../buttons/button";
+
+  @import (optional) "../checkboxes/default";
+
+  @import (optional) "../date-fields/calendar";
+  @import (optional) "../date-fields/datepicker";
+
+  @import (optional) "../dialogs/dialogs";
+
+  @import (optional) "../dropdowns/menu";
+  @import (optional) "../dropdowns/dropdowns";
+
+  @import (optional) "../loading/loading";
+
+  @import (optional) "../text-fields/default";
+  @import (optional) "../text-fields/input-group";
+  @import (optional) "../text-fields/validation";
+  @import (optional) "../text-fields/readonly";
+  @import (optional) "../text-fields/fullwidth";
+  @import (optional) "../text-fields/label";
+  @import (optional) "../text-fields/suffix";
+  @import (optional) "../text-fields/prefix";
+  @import (optional) "../text-fields/textarea";
+  @import (optional) "../text-fields/prefill";
+
+  @import (optional) "../number-fields/numbers";
+  @import (optional) "../number-fields/slider";
+
+  @import (optional) "../notifications/notifications";
+
+  @import (optional) "../trees/tree";
+
+  @import (optional) "../radiobuttons/radiobuttons";
+
+  @import (optional) "../switch/switch";
+
+  @import (optional) "../tabs/tabs";
+
+  @import (optional) "../progress-bar/progress-bar";
+
+  @import (optional) "../tooltips/tooltips";
+
+  @import (optional) "../wizard/wizard";
+
+  @import (optional) "../dataviz/gauge/gauge";
+
+  @import (optional) "../signin/signin";
+
+  // WIP
+  // @import "badge/badge";
+}

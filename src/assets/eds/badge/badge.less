@@ -1,0 +1,26 @@
+@import (reference, once) "common/global";
+
+/////////////////////////////////////////////////////////////////////////////
+// Badge style
+/////////////////////////////////////////////////////////////////////////////
+
+.badge {
+  display: inline-block;
+  margin: 0;
+  background: @blue;
+  color: @white;
+  line-height: 20px;
+  padding: 2px 8px;
+  border-radius: 6px;
+
+  .icon {
+    margin-right: @space-base;
+  }
+
+  &:hover {
+    color: @layer0;
+    background: @white;
+  }
+
+  &.critical { background-color: @red; }
+}

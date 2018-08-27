@@ -1,0 +1,118 @@
+/////////////////////////////////////
+// Table - Pagination
+/////////////////////////////////////
+@import (reference) "../common/global";
+
+.pagination-group {
+  display: flex;
+
+  .dropdown {
+    margin-top: -6px;
+
+    .preffix {
+      margin-right: 6px;
+    }
+  }
+
+  .input-group {
+    display: none;
+    margin-top: -12px;
+    margin-left: @space-xl;
+    margin-right: @space-large;
+
+    label {
+      display: inline-block;
+    }
+  }
+
+  ul.pagination {
+    display: inline-block;
+    margin: 0 0 @space-large;
+    padding: 0;
+
+    li {
+      display: none;
+      padding: @space-large @space-large;
+
+      &:nth-child(-n+3) {
+        display: inline;
+      }
+
+      &:nth-last-child(-n+3) {
+        display: inline;
+      }
+
+      &:hover {
+        background-color: @table-hover;
+        cursor: pointer;
+      }
+
+      &.active {
+        a {
+          font-weight: @weight-bold;
+          border-bottom: solid 3px @text;
+
+          &:hover {
+            cursor: default;
+          }
+        }
+
+        &:hover {
+          background: @layer2;
+        }
+      }
+
+      a {
+        color: @pagination-text;
+        padding-bottom: 3px;
+        text-decoration: none;
+
+        .icon-arrow-right, .icon-arrow-left {
+          font-size: 16px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .left {
+    flex: 1;
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  .right {
+    margin-right: 0;
+    display: none;
+  }
+}
+
+@media @tablet {
+  .pagination-group {
+    ul.pagination {
+      li {
+        display: inline;
+        padding: @space-large @space-base;
+      }
+    }
+
+    .left {
+      flex: 1;
+      margin-left: @space-large;
+      display: inline-block;
+    }
+
+    .right {
+      margin-right: @space-large;
+      display: inline-block;
+    }
+  }
+}
+
+@media @desktop {
+  .pagination-group {
+    .input-group {
+      display: inline-block;
+    }
+  }
+}

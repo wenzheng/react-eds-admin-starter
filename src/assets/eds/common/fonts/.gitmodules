@@ -1,0 +1,4 @@
+[submodule "vanilla-components/hilda"]
+	path = hilda
+	url = ../hilda.git
+	branch = master
